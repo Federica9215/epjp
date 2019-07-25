@@ -16,7 +16,7 @@ public class S55 {
     		return 0;
     	} else {
     		for (int i = first; i <= last;i++) 
-    		    sum+=i +first+last;
+    		    i+=first+last;
     		
     	}
 		return sum;
