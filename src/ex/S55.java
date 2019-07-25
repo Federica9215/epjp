@@ -8,9 +8,24 @@ public class S55 {
      * @param last the right limit
      * @return the sum of all the numbers, or zero
      */
-    public static long sum(int first, int last) {
+
+	public static long sum(int first, int last)
+    
+    {int sum=0;
+    	if (last<first) {
+    		return 0;
+    	} else {
+    		for (int i = first; i <= last;i++) 
+    		    sum+=i +first+last;
+    		
+    	}
+		return sum;
+		
+		
+    	
+    
         // TODO
-        return 0;
+        
     }
 
     /**

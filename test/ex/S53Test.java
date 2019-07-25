@@ -21,7 +21,7 @@ class S53Test {
 
         assertThat(actual, is(Double.POSITIVE_INFINITY));
     }
-
+    
     @Test
     void distanceSquareTwo() {
         double actual = S53.distance(1, 10, 2, 9);

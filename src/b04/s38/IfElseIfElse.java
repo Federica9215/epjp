@@ -1,18 +1,24 @@
 package b04.s38;
 
 public class IfElseIfElse {
-    public static void main(String[] args) {
-        boolean condition = false;
-        boolean otherCondition = true;
+	public static void main(String[] args) {
+		int value = 0;
 
-        if (condition) {
-            System.out.println("only if condition is true");
-        } else if (otherCondition) {
-            System.out.println("only if condition is false and otherCondition is true");
-        } else {
-            System.out.println("condition and otherCondition are both false");
-        }
+		if (value < 0) {
+			System.out.println("negativo");
+		} else if (value >= 0 && value < 100) {
+			System.out.println("piccolo");
 
-        System.out.println("always printed");
-    }
+			if (value >= 0 && value < 100 && value % 2 == 0) {
+				System.out.println("pari");
+
+			} else {
+
+				System.out.println("dispari");
+			}
+		} else {
+			System.out.println("grande");
+		}
+
+	}
 }

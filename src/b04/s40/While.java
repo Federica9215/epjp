@@ -12,5 +12,16 @@ public class While {
                 condition = false;
             }
         }
+        
+        int [] array= {3, 6, 8, 5, 9};
+      //  int i = 0;
+        		
+        		// while (array[i]%3 == 0) { System.out.println(array[i]);         			i += 1;         		}
+        for (int i = 0; i < array.length ; i++) {
+        	if (array[i]%3 == 0) {
+        		System.out.println(array[i]);
+        	}
+        	
+        }
     }
 }
