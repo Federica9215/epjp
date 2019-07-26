@@ -1,6 +1,10 @@
 package ex;
 
 public class S55 {
+	private static long fibonacci;
+
+
+
 	/**
 	 * Add up all the numbers in the passed closed interval
 	 * 
@@ -92,11 +96,23 @@ public class S55 {
 	 * @param value
 	 * @return the Fibonacci number of value, or zero
 	 */
-	public static long fibonacci(int value) {
-		// TODO
-		return 0;
+	public static long fibonacci(long value) {
+		if (value==0L) {
+			return value; 
+		}
+		if (value <=1L) {
+			return value; 
+		} else if (value > 1L && value < 20L) {
+			
+			return fibonacci(value-1L)+fibonacci(value-2L);
+		}
+		return 0L;
+		
+		
 	}
 
+	
+	
 	/**
 	 * Multiplication table
 	 * 

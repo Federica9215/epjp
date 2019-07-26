@@ -80,7 +80,9 @@ class S55Test {
 
     @Test
     void fibonacci() {
-        fail("Not yet implemented");
+    	long actual = 9L;
+    	
+    	assertThat(actual, is(0L));
     }
 
     @Test
