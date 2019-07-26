@@ -120,10 +120,27 @@ public class S55 {
 	 * @return The multiplication table for value, when possible
 	 */
 	public static int[][] multiplicationTable(int value) {
-		int[][] result = new int[0][0];
+		int[][] result = new int[value][value];
+		int i=0; 
+		int j=0;
+		
+		for (i = 1; i<=value; i++) {
+			for (j=1; j<value; j++) {
+				result[i][j]=(i+1)*(j+1);
+			}
+		}
+		
 
 		// TODO
 
 		return result;
 	}
+
+	private static int[] result(int i) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }
+
+
+		

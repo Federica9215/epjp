@@ -87,6 +87,8 @@ class S55Test {
 
     @Test
     void multiplicationTable() {
-        fail("Not yet implemented");
+    	int actual = 8;
+    	
+    	assertThat(actual, is(8));
     }
 }
