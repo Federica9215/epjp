@@ -96,17 +96,17 @@ public class S55 {
 	 * @param value
 	 * @return the Fibonacci number of value, or zero
 	 */
-	public static long fibonacci(long value) {
-		if (value==0L) {
+	public static long fibonacci(int value) {
+		if (value==0) {
 			return value; 
 		}
-		if (value <=1L) {
+		if (value <=1) {
 			return value; 
-		} else if (value > 1L && value < 20L) {
+		} else if (value > 1 && value < 20) {
 			
-			return fibonacci(value-1L)+fibonacci(value-2L);
+			return fibonacci(value-1)+fibonacci(value-2);
 		}
-		return 0L;
+		return 0;
 		
 		
 	}

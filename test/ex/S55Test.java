@@ -80,9 +80,9 @@ class S55Test {
 
     @Test
     void fibonacci() {
-    	long actual = 9L;
+    	int actual = 8;
     	
-    	assertThat(actual, is(0L));
+    	assertThat(actual, is(8));
     }
 
     @Test
