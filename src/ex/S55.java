@@ -38,25 +38,18 @@ public class S55 {
 	public static long evenSum(int first, int last) {
 		long evenSum = 0L;
 		int i = 0;
-		while (i <= last && i > first) {
+		for (i = first; i <=last;) {
 			if (i % 2 == 0) {
-				return evenSum+=i;
-				
+				return evenSum += i;
+
 			} else {
 
-				return 0L;
-
+				return evenSum;
 			}
 
 		}
+		return evenSum;
 
-		// while (i <= elementiArray){
-		if (i % 2 == 0) {
-			numeriPari++;
-		} else {
-			numeriDispari++;
-		}
-		i++;
 	}
 
 	/**
