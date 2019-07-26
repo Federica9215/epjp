@@ -11,19 +11,24 @@ public class S56 {
      */
     public static String reverse(String s) {
     	int i=0; 
-    	
+    	StringBuilder reverse= new StringBuilder(); 
     	for (i = s.length()-1; i>=0;i--) {
-    		return s(i); 
+    		reverse.append(s.charAt(i)); 
     	}
         // TODO
-		return s;
+		return reverse.toString();
         
 		 
 		
 		
     }
 
-    private static String s(int i) {
+    private static String length(int i) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	private static String s(int i) {
 		// TODO Auto-generated method stub
 		return null;
 	}
@@ -47,7 +52,9 @@ public class S56 {
      */
     public static String removeVowels(String s) {
         String[] array= {"a","e", "i", "o", "u"}; 
-        if ()      
+        if ()      {
+        	
+        }
        
         
         return "";
