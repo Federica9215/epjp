@@ -1,6 +1,8 @@
 package ex;
 
 public class S56 {
+	
+	
     /**
      * Reverse a string
      * 
@@ -8,11 +10,25 @@ public class S56 {
      * @return the input reversed
      */
     public static String reverse(String s) {
+    	int i=0; 
+    	
+    	for (i = s.length()-1; i>=0;i--) {
+    		return s(i); 
+    	}
         // TODO
-        return "";
+		return s;
+        
+		 
+		
+		
     }
 
-    /**
+    private static String s(int i) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	/**
      * Check if the parameter is a palindrome
      * 
      * @param s
@@ -30,7 +46,10 @@ public class S56 {
      * @return a string, same of input but without vowels
      */
     public static String removeVowels(String s) {
-        // TODO
+        String[] array= {"a","e", "i", "o", "u"}; 
+        if ()      
+       
+        
         return "";
     }
 
