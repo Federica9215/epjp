@@ -159,6 +159,7 @@ public class S54 {
 			result[1] = a;
 			result[2] = c;
 	 			}
+		return result;
 
 		}
 
