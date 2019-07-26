@@ -59,8 +59,31 @@ public class S55 {
 	 * @return factorial of input value, or zero
 	 */
 	public static long factorial(int value) {
+		long factorial = 0L;
+		int i=0;
+		if(value==0) {
+			
+			return factorial=1L; 
+			
+		}
+		
+		if(value<0) {
+			
+			return factorial=0L; 
+			
+		}
+		
+		if(value>0) {
+			
+			for (i=value; i==1; i--) {
+				i*=(i-1)*(i-2); 
+			}
+			return factorial=i*(i-1)*(i-2);
+		}
+			
+			return factorial;
 		// TODO
-		return 0;
+		
 	}
 
 	/**
