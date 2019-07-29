@@ -29,7 +29,7 @@ public class Poodle {
 
 	@Override
 	public String toString() {
-		return this.name + ":" + this.weight;
+		return "Il cane con il nome " + this.name + " pesa più di tutti: " + this.weight + "kg";
 	}
 
 	public int getWeigth() {
