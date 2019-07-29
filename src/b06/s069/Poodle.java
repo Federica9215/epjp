@@ -2,8 +2,8 @@ package b06.s069;
 
 
 public class Poodle {
-	private static final String DEFAULT_NAME = " ";
-	private static final int DEFAULT_WEIGHT = 4;
+	protected static final String DEFAULT_NAME = " ";
+	protected static final int DEFAULT_WEIGHT = 4;
 	protected String name;
 	protected int weight;
 	
