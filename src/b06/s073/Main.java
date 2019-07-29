@@ -11,8 +11,8 @@ public class Main {
         dog.bark();
 
         // no, no, no!!!
-        Cat cat = (Cat) pet; // java.lang.ClassCastException
-        System.out.println(System.identityHashCode(cat));
+    //    Cat cat = (Cat) pet; // java.lang.ClassCastException
+    //    System.out.println(System.identityHashCode(cat));
 
         if (pet instanceof Cat) {
             Cat tom = (Cat) pet;
