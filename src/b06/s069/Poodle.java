@@ -29,7 +29,12 @@ public class Poodle {
 
 	@Override
 	public String toString() {
-		return this.name + ":" + this.DEFAULT_WEIGHT;
+		return this.name + ":" + this.weight;
+	}
+
+	public int getWeigth() {
+		
+		return weight;
 	}
 	
 	
