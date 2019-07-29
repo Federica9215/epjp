@@ -1,6 +1,6 @@
 package b06.s069;
 
-import b06.s072.Dog;
+
 
 public class MainPoodle {
 
