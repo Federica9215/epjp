@@ -1,6 +1,6 @@
 package b07;
 
-import b07.S75.PaperinoException;
+
 
 public class S75 {
     public void f() {
