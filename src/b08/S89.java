@@ -9,7 +9,7 @@ public class S89 {
     public static void someLog() {
         Logger log = Logger.getLogger("sample");
 
-        log.finest("message");
+        log.finest("finest message");
         log.finer("finer message");
         log.fine("fine message");
         log.config("config message");
