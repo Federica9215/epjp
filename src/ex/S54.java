@@ -113,6 +113,12 @@ public class S54 {
 		return 0;
 
 	}
+	public static char voteEx(double percentile) throws Exception {
+		if (percentile < 0 && percentile > 100 ) {
+			throw new Exception("Errore!");
+		}
+		return vote(percentile);
+	}
 
 	/**
 	 * Leap year checker

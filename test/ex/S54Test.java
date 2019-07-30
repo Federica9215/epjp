@@ -2,95 +2,105 @@ package ex;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
-
 import org.junit.jupiter.api.Test;
 
 class S54Test {
 
-    @Test
-    void checkSignPositive() {
-        String actual = S54.checkSign(42);
+	@Test
+	void checkSignPositive() {
+		String actual = S54.checkSign(42);
 
-        assertThat(actual, is("positive"));
-    }
+		assertThat(actual, is("positive"));
+	}
 
-    @Test
-    void checkSignNegative() {
-        String actual = S54.checkSign(-42);
+	@Test
+	void checkSignNegative() {
+		String actual = S54.checkSign(-42);
 
-        assertThat(actual, is("negative"));
-    }
+		assertThat(actual, is("negative"));
+	}
 
-    @Test
-    void checkSignZero() {
-        String actual = S54.checkSign(0);
+	@Test
+	void checkSignZero() {
+		String actual = S54.checkSign(0);
 
-        assertThat(actual, is("zero"));
-    }
+		assertThat(actual, is("zero"));
+	}
 
-    @Test
-    void isOddTrue() {
-        boolean actual = S54.isOdd(19);
+	@Test
+	void isOddTrue() {
+		boolean actual = S54.isOdd(19);
 
-        assertThat(actual, is(true));
-    }
+		assertThat(actual, is(true));
+	}
 
-    @Test
-    void isOddFalse() {
-        boolean actual = S54.isOdd(-12);
+	@Test
+	void isOddFalse() {
+		boolean actual = S54.isOdd(-12);
 
-        assertThat(actual, is(false));
-    }
+		assertThat(actual, is(false));
+	}
 
-    @Test
-    void asWordZero() {
-        String actual = S54.asWord(0);
+	@Test
+	void asWordZero() {
+		String actual = S54.asWord(0);
 
-        assertThat(actual, is("zero"));
-    }
+		assertThat(actual, is("zero"));
+	}
 
-    @Test
-    void asWordOther() {
-        String actual = S54.asWord(42);
+	@Test
+	void asWordOther() {
+		String actual = S54.asWord(42);
 
-        assertThat(actual, is("other"));
-    }
+		assertThat(actual, is("other"));
+	}
 
-    @Test
-    void voteLowA() {
-        char actual = S54.vote(90.01);
+	@Test
+	void voteLowA() {
+		char actual = S54.vote(90.01);
 
-        assertThat(actual, is('A'));
-    }
+		assertThat(actual, is('A'));
+	}
 
-    @Test
-    void voteTopB() {
-        char actual = S54.vote(90);
+	@Test
+	void voteExSimple() {
+		try {
+			S54.voteEx(0);
+		} catch (Exception e) {
+			String expected = "Errore!";
+			assertThat(e.getMessage(), is(expected));
+		}
 
-        assertThat(actual, is('B'));
-    }
+	}
 
-    @Test
-    void isLeapTrue() {
-        boolean actual = S54.isLeapYear(2020);
+	@Test
+	void voteTopB() {
+		char actual = S54.vote(90);
 
-        assertThat(actual, is(true));
-    }
+		assertThat(actual, is('B'));
+	}
 
-    @Test
-    void isLeapFalse() {
-        boolean actual = S54.isLeapYear(1900);
+	@Test
+	void isLeapTrue() {
+		boolean actual = S54.isLeapYear(2020);
 
-        assertThat(actual, is(false));
-    }
+		assertThat(actual, is(true));
+	}
 
-    @Test
-    void sortPlain() {
-        int[] actual = S54.sort(3, 2, 1);
+	@Test
+	void isLeapFalse() {
+		boolean actual = S54.isLeapYear(1900);
 
-        assertThat(actual.length, is(3));
-        assertThat(actual[0], is(1));
-        assertThat(actual[1], is(2));
-        assertThat(actual[2], is(3));
-    }
+		assertThat(actual, is(false));
+	}
+
+	@Test
+	void sortPlain() {
+		int[] actual = S54.sort(3, 2, 1);
+
+		assertThat(actual.length, is(3));
+		assertThat(actual[0], is(1));
+		assertThat(actual[1], is(2));
+		assertThat(actual[2], is(3));
+	}
 }
