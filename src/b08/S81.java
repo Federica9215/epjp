@@ -16,7 +16,7 @@ public class S81 {
             File f4 = new File(new URI("file:///C://tmp/hello.txt"));
             System.out.println("Does the file exist? " + f4.exists());
         } catch (URISyntaxException e) {
-            e.printStackTrace();
+            e.printStackTrace(); //il try and catch mi da falso se sbaglio ad inserire l'uri, altrimenti no
         }
 
         System.out.println("Is /tmp a directory? " + dir.isDirectory());

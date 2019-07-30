@@ -8,9 +8,9 @@ public class S87 {
         double result = 0;
 
         Scanner scanner = new Scanner(System.in);
-        while (scanner.hasNext()) {
-            if (scanner.hasNextDouble()) {
-                result += scanner.nextDouble();
+        while (scanner.hasNext()) { //finchè nello scanner c'è qlks da leggere
+            if (scanner.hasNextDouble()) { // se nelLo scanner c e qlks da leggere 
+                result += scanner.nextDouble(); //allora dammi il risultato
             } else {
                 System.out.println("Bad input, discarded: " + scanner.next());
             }
