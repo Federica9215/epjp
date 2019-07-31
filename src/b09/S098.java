@@ -9,7 +9,7 @@ public class S098 {
         Queue<Integer> q = aQueue();
         System.out.println(q);
 
-        if (q.offer(18)) {
+        if (q.offer(18)) { //offer ritorna un booleano; se ho una limitazione sulla dimensione ritorna false qnd nn riesce ad inserire
             System.out.println("18 has been added");
         }
 

@@ -16,7 +16,7 @@ public class S097 {
         System.out.println("More than -1: " + ns.higher(-1));
         System.out.println("Less than -1: " + ns.lower(-1));
 
-        System.out.println("Poll the first element: " + ns.pollFirst());
+        System.out.println("Poll the first element: " + ns.pollFirst()); //toglie e legge il primo num
         System.out.println("Poll the last element: " + ns.pollLast());
     
         System.out.println("Print the set in descending order");
@@ -30,5 +30,5 @@ public class S097 {
 
     private static NavigableSet<Integer> aNavSet() {
         return new TreeSet<Integer>(Arrays.asList(5, -3, -1, 12, 27, 5));
-    }
+    } //con treeset elimino i duplicati
 }

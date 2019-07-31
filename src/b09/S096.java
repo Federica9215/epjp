@@ -15,6 +15,6 @@ public class S096 {
 
     private static SortedSet<Integer> aSortedSet() {
         return new TreeSet<Integer>(Arrays.asList(12, 18, -5, -2233));
-    }
+    }//ho passato Arrays.asList(12, 18, -5, -2233) al treeset
 
 }
