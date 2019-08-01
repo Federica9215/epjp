@@ -14,7 +14,7 @@ class TabellaTest {
 		Tabella tabella = new Tabella();
 		tabella.add(7);
 		tabella.add(5);
-		ArrayList<Integer> actual = new ArrayList<Integer>(1);
+		ArrayList<Integer> actual = new ArrayList<Integer>( );
 
 		assertEquals(actual, "(1,7,5)");
 	}
