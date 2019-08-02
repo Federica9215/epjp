@@ -48,7 +48,9 @@ public class Main {
 		ArrayList<Person> dead = new ArrayList<Person>();
 		
 //		for (int i=0; i<persons.size () ;i++) {
-//			if (persons.g
+//			if (persons instanceof Villain) {
+//				
+//			}
 //			
 //		}
 		
