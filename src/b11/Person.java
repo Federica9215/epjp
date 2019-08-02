@@ -13,8 +13,17 @@ abstract class Person {
 		return name;
 	}
 
-	public int changeEnergy() {
-		return energy;
+	public void changeEnergy(int delta) {
+		this.energy+=delta;
+		
+	}
+
+	public boolean alive() {
+		if(energy==0) {
+			return false;
+		}
+
+		return true;
 	}
 
 	@Override

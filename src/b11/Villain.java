@@ -8,14 +8,12 @@ public class Villain extends Person {
 		this.shootingPower = shootingPower;
 	}
 
-	public int getShootingPower(Person p) {
-		return shootingPower;
+	public void shoot(Person p) {
+		p.changeEnergy(shootingPower);
 	}
 
 	@Override
 	public String toString() {
 		return "Villain [shootingPower=" + shootingPower + super.toString() + "]";
 	}
-
-	
 }

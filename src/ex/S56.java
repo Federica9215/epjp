@@ -52,9 +52,9 @@ public class S56 {
      */
     public static String removeVowels(String s) {
         String[] array= {"a","e", "i", "o", "u"}; 
-        if ()      {
-        	
-        }
+//        if ()      {
+//        	
+//        }
        
         
         return "";

@@ -9,7 +9,15 @@ public class Hero extends Person {
 
 	}
 
+	/**
+	 * 
+	 * @param p
+	 * @return
+	 */
 	public boolean arrest(Person p) {
+//		if () {
+//			
+//		}
 		return true;
 	}
 
