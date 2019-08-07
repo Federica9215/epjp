@@ -174,3 +174,67 @@ select MAX(salary) - min(salary)
 from employees
 group by job_id
 HAVING (MAX(salary) - min(salary)) > 0
+
+--Qual è il salario minimo con i dipendenti raggruppati per manager, non considerare chi non ha manager, né i gruppi con salario minimo inferiore a 6.000€
+
+select min(salary) 
+from employees
+where employee_id in(
+select distinct manager_id
+from employees 
+where manager_id is not null and salary>6000)
+group by manager_id;
+
+
+--Indirizzi completi, tra locations e countries
+select c.country_name as Country, l.street_address as Address, l.city as City
+from countries c join locations l
+on (c.country_id=l.country_id);
+
+--Name e department name
+select e.last_name as LastName, e.first_name as Name, d.department_name as Department
+from employees e join departments d
+on (e.department_id=d.department_id);
+
+--Name e department name, ma solo per chi è basato a Toronto
+
+select e.last_name as Surname , d.department_name as Department
+from employees e join departments d on (e.department_id=d.department_id)
+join locations l on d.location_id=l.location_id and l.location_id=1800;
+
+--Chi è stato assunto dopo David Lee
+
+select last_name as Surname 
+from employees 
+where  hire_date>(select hire_date from employees where last_name='Lee' and first_name='David');
+
+--Chi è stato assunto prima del proprio manager(NO)
+select last_name as Surname 
+from employees 
+where  hire_date < (select hire_date from employees where manager_id!=employee_id);
+
+--Chi ha lo stesso manager di Lisa Ozer
+select last_name as Surname 
+from employees 
+where manager_id= (select manager_id from employees where last_name='Ozer' and first_name='Lisa');
+
+--Chi lavora in un department in cui c’è almeno un employee con una ‘u’ nel cognome
+
+(select last_name
+from employees
+where regexp_like(last_name, '*[uU].*') or regexp_like(first_name, '*[uU].*') );
+
+insert into regions(region_id) values (12);
+
+insert into regions values (13, null);
+
+update regions
+set region_name = 'Region ' || region_id
+where region_id > 10;
+
+delete from regions
+where region_id > 10;
+
+insert into regions values (13, 'Terra');
+delete from regions
+where region_id > 10;
