@@ -11,9 +11,9 @@ publication_date date
 );
 
 create table books_authors ( --utilizzo constraint
-constraint author_id_pk primary key (author_id) references authors(author_id),  
+author_id number(7,0), constraint author_id_pk primary key (author_id) references authors(author_id),  
 constraint book_id_pk primary key (book_id) references books(book_id)
-
+constraint books_authors_uq unique(author_id,book_id));
 );
 
 create table name_users (
